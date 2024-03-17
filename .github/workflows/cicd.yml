@@ -14,6 +14,6 @@ jobs:
       - name: login to dockerhub
         run: docker login -u ${{secrets.DOCKER_USERNAME}} -p ${{secrets.DOCKER_PASSWORD}}
       - name: Build docker image
-        run: docker build -t react-example-image:latest .
+        run: docker build -t contactvw77/react-example-image:latest .
       - name: Publish image to dockerhub
-        run: docker push react-example-image:latest
+        run: docker push contactvw77/react-example-image:latest
